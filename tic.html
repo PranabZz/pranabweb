@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TicTacToe</title>
+    <link rel="stylesheet" type="text/css" href="tic.css">
+    <script src="tic.js"></script>
+
+</head>
+
+<body>
+    <div id="all">
+        <div id="buttons">
+            <button class="btn-option" onclick="theme();"><b>Change theme</b></button>
+        </div>
+        <h2 class="header" style="text-align: center; font-size: 50px;">Tic-Tac-Toe Game</h2>
+        <table class="tic">
+            <div id="box">
+                <tr>
+                    <td class="place-holder" onclick="clicked(0);"></td>
+                    <td class="place-holder" onclick="clicked(1);""></td>
+                    <td class=" place-holder" onclick="clicked(2);"></td>
+                </tr>
+                <tr>
+                    <td class="place-holder" onclick="clicked(3);"></td>
+                    <td class="place-holder" onclick="clicked(4);"></td>
+                    <td class="place-holder" onclick="clicked(5);"></td>
+                </tr>
+                <tr>
+                    <td class="place-holder" onclick="clicked(6);"></td>
+                    <td class="place-holder" onclick="clicked(7);"></td>
+                    <td class="place-holder" onclick="clicked(8);"></td>
+                </tr>
+            </div>
+        </table>
+        <div id="win"></div>
+        <div id="button">
+            <button class="btn" onclick="reset();"><b>Restart</b></button>
+        </div>
+   
+</body>
+
+</html>

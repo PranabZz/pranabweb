@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 50%;
+  background: red;
+  text-align:center;
+  padding:25px;
+  transition: width 2s;
+}
+
+div:hover {
+  width: 200px;
+}
+</style>
+<script>
+function change(){
+document.getElementById("click").innerHTML="Click me >";
+}
+
+</script>
+</head>
+<body>
+
+<h1>The transition Property</h1>
+
+<p>Hover over the div element below, to see the transition effect:</p>
+<div id="click" onmouseover="change()">Click me ^</div>
+
+</body>
+</html>
+
