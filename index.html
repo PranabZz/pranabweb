@@ -15,9 +15,9 @@
     />
     <title>Pranab Kc</title>
     <style>
-      *{
-         font-family: 'Courier New', Courier, monospace;   
-        }
+      * {
+        font-family: "Courier New", Courier, monospace;
+      }
       body {
         background-color: #0a192f;
       }
@@ -52,13 +52,45 @@
         margin: 50px;
         font-size: 25px;
       }
-    
+
+      .footer {
+        display: flexbox;
+        justify-content: center;
+        align-items: center;
+        margin-left: 14rem;
+        font-size: 35px;
+      }
+      .fa:hover {
+        opacity: 0.7;
+      }
+
+      .fa-facebook {
+        background: #3b5998;
+        color: white;
+      }
+
+      .fa-twitter {
+        background: #55acee;
+        color: white;
+      }
+      .fa-instagram {
+        background: #4e1818;
+        color: white;
+      }
+
+      .fa-github {
+        background: #443c3c;
+        color: white;
+      }
     </style>
   </head>
   <body>
     <!--Navbar -->
     <nav class="navbar sticky-top">
-      <div class="container-fluid">
+      <div
+        class="container-fluid"
+        style="background-color: #0a192f; position: fixed; top: 0%"
+      >
         <a class="navbar-brand" href="#"
           ><img src="KC.png" height="50px width="10%"></a
         >
@@ -87,7 +119,7 @@
     <!--Welcome-->
     <div class="container-fluid">
       <div class="Welcome">
-        Hey There,<br/>
+        Hey There,<br />
         <div class="name">
           My name is Pranab Kc.
           <p style="color: rgb(156, 117, 156); font-size: 20px">
@@ -140,38 +172,78 @@
     </div>
     <!--Projects-->
     <div id="projects">
+      <div class="skilss container-fluid">
+        <p style="color: rgb(228, 228, 166)">Projects</p>
+        <hr style="color: white; margin-right: 10%; margin-left: 10%" />
+        <hr />
+      </div>
+      <div class="card-group" style="padding: 35px; margin: 10px">
+        <div
+          class="card"
+          style="padding: 15px; background-color: rgb(201, 215, 236)"
+        >
+          <div class="card-body">
+            <h5 class="card-title">C-Programming</h5>
+            <p class="card-text">
+              A simple report card management system made from C-programming.
+            </p>
+            <a
+              href="https://github.com/PranabZz/Project1"
+              class="btn btn-danger"
+              >Github</a
+            >
+            <p class="card-text">
+              <small class="text-muted"><br />Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div class="card" style="padding: 15px">
+          <div class="card-body">
+            <h5 class="card-title">C-Programming</h5>
+            <p class="card-text">
+              A project made to understand the concept of encrption/decryption.
+            </p>
+            <a
+              href="https://github.com/PranabZz/Encryption-Decryption"
+              class="btn btn-danger"
+              >Github</a
+            >
+            <p class="card-text">
+              <small class="text-muted"><br />Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+        <div
+          class="card"
+          style="padding: 15px; background-color: rgb(201, 215, 236)"
+        >
+          <div class="card-body">
+            <h5 class="card-title">Python</h5>
+            <p class="card-text">
+              Python based game made using the pygame library.
+            </p>
+            <a
+              href="https://github.com/PranabZz/python-game1"
+              class="btn btn-danger"
+              >Github</a
+            >
+            <p class="card-text">
+              <small class="text-muted"><br />Last updated 3 mins ago</small>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="skilss container-fluid">
-            <p style="color: rgb(228, 228, 166)">Projects</p>
-            <hr style="color: white; margin-right: 10%; margin-left: 10%" />
-            <hr/>
-          </div>
-          <div class="card-group" style="padding: 35px; margin: 10px;">
-            <div class="card" style="padding:15px; background-color: rgb(201, 215, 236);">
-              <div class="card-body">
-                <h5 class="card-title">C-Programming</h5>
-                <p class="card-text">A simple report card management system made from C-programming.</p>
-                <a href="https://github.com/PranabZz/Project1" class="btn btn-danger">Github</a>
-                <p class="card-text"><small class="text-muted"><br>Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card" style="padding:15px; ">
-              <div class="card-body">
-                <h5 class="card-title">C-Programming</h5>
-                <p class="card-text">A project made to understand the concept of encrption/decryption.</p>
-                <a href="https://github.com/PranabZz/Encryption-Decryption" class="btn btn-danger">Github</a>
-                <p class="card-text"><small class="text-muted"><br>Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-            <div class="card" style="padding:15px;  background-color: rgb(201, 215, 236);">
-              <div class="card-body">
-                <h5 class="card-title">Python</h5>
-                <p class="card-text">Python based game made using the pygame library.</p>
-                <a href="https://github.com/PranabZz/python-game1" class="btn btn-danger">Github</a>
-                <p class="card-text"><small class="text-muted"><br>Last updated 3 mins ago</small></p>
-              </div>
-            </div>
-          </div>
-          </div>
+      <hr style="color: white; margin-right: 10%; margin-left: 10%" />
+      <hr />
+    </div>
+    <div class="footer container-fluid">
+      <a href="https://www.facebook.com/username22.a/" class="fa fa-facebook" style="padding: 20px;font-size: 30px;width: 70px;text-align: center;text-decoration: none;margin: 5px 2px;"></a>
+      <a href="https://twitter.com/pranab84959194" class="fa fa-twitter" style="padding: 20px;font-size: 30px;width: 70px;text-align: center;text-decoration: none;margin: 5px 2px;"></a>
+      <a href="https://github.com/PranabZz" class="fa fa-github" style="padding: 20px;font-size: 30px;width: 70px;text-align: center;text-decoration: none;margin: 5px 2px;"></a>
+      <a href="https://www.instagram.com/pranab.kc/" class="fa fa-instagram"style="padding: 20px;font-size: 30px;width: 70px;text-align: center;text-decoration: none;margin: 5px 2px;"></a>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
