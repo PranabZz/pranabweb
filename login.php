@@ -1,16 +1,16 @@
 <?php 
 
 
-// $servername = "localhost";
-// $username = "root";
-// $password = "";
-// $db = "LOGIN";
+$servername = "https://www.pranabraj.com.np/";
+$username = "";
+$password = "";
+$db = "LOGIN";
 
-// $con = mysqli_connect($servername,$username,$password,$db);
+$con = mysqli_connect($servername,$username,$password,$db);
 
-// if(!$con){
-//     echo "No connection";
-// }
+if(!$con){
+    echo "No connection";
+}
 
 $email = $_POST["email"];
 $password = $_POST["pass"];
