@@ -9,7 +9,7 @@ $db = "LOGIN";
 $con = mysqli_connect($servername,$username,$password,$db);
 
 if(!$con){
-    echo "No connection";
+    echo "<p>No connection</p>";
 }
 
 $email = $_POST["email"];
