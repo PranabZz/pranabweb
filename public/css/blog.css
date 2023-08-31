@@ -1,0 +1,113 @@
+* {
+    background-color: #1d1e20;
+    font-family: 'Consolas', 'Courier New', monospace;
+
+}
+
+nav {
+    display: flex;
+    margin: 15px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-heading {
+    color: white;
+    font-size: 26px;
+}
+
+.nav-links {
+    color: white;
+    font-size: 16px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+}
+
+.card {
+    position: relative;
+    height: 650px;
+    width: 60%;
+    /* border: 1px solid white; */
+    margin-bottom: 150px;
+}
+
+.img {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid white; */
+    border-radius: 10px;
+    height: 400px;
+    margin-bottom: 10px;
+}
+
+img {
+    border-radius: 10px;
+}
+
+.text {
+    color: white;
+    padding: 25px
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.blog {
+    width: 100%;
+    max-width: 80rem;
+    /* Equivalent to max-w-7xl in Tailwind */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.category{
+    margin-top: 10px;
+    width: fit-content;
+    background-color: #4B0082;
+    padding: 6px 6px 4px 4px;
+    border-radius: 12px;
+}
+
+.desc {
+    color: rgb(122, 122, 122);
+    margin-top: 10px;
+}
+
+.time {
+    position: absolute;
+    bottom: 0%;
+    right: 0;
+    padding: 25px;
+}
+
+.language-c,
+.language-markup,
+.language-javascript,
+.language-css,
+.language-php,
+.language-python,
+.language-cpp {
+    background-color: rgb(54, 52, 52);
+    padding: 10px;
+    height: fit-content;
+    border-radius: 10px;
+    color: white; /* Set the text color */
+}
+
+code{
+    background-color: rgb(54, 52, 52);
+    font-style: italic;
+    padding: 2px;
+    color: white;
+}
+
+.description{
+    color: rgb(190, 183, 183);
+}
