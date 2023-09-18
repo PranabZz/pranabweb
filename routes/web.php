@@ -17,32 +17,34 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 */
 
-/* 
-    TODO Overview 
+/*
+    TODO Overview
 
-    Two users one admin and other guest 
-        -> Admin is the only one that has access to the dashbord 
+    Two users one admin and other guest
+        -> Admin is the only one that has access to the dashbord
         -> Guest has access to view the portfolio and the blog section without having the ability to change any content
 
     Directories/Files needed
 
-        -> Frontend (Access => [guest,admin]) 
+        -> Frontend (Access => [guest,admin])
             -> index // Portfolio
             -> blog_page
             -> blog
         -> Admin (Access => [admin])
             -> dashboard
             ->blogs
-                -> create 
+                -> create
                 -> edit
                 -> index
 */
+
+
 
 Route::get('/portfolio', [PortfolioController::class, 'index'])->name('portfolio');
 Route::get('/', [FrontendBlogController::class, 'index']);
 Route::get('/show/{blog:slug}', [FrontendBlogController::class, 'show'])->name('blog-show');
 
-
+Route::get('/qr',[PortfolioController::class, 'qr'])->name('qr');
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('/', [UserAuthController::class, 'index'])->name('login-page');

@@ -16,9 +16,9 @@ return new class extends Migration
             $table->string('title');
             $table->string('slug');
             $table->string('category');
-            $table->string('description');
+            $table->longText('description');
             $table->string('thumbnail')->nullable();
-            $table->string('preview');
+            $table->longText('preview');
             $table->timestamps();
         });
     }
@@ -26,6 +26,7 @@ return new class extends Migration
     /**
      * Reverse the migrations.
      */
+    
     public function down(): void
     {
         Schema::dropIfExists('blogs');
