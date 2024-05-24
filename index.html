@@ -1,13 +1,147 @@
 <!doctype html>
 <html>
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="output.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranab | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .intrest {
+            position: relative;
+        }
+
+        .intrest h2 {
+            color: #fff;
+            position: absolute;
+        }
+
+        .intrest h2:nth-child(2) {
+            color: transparent;
+            -webkit-text-stroke: 2px #3b82f6;
+        }
+
+        .intrest h2:nth-child(3) {
+            color: #3b82f6;
+            animation: animate 2s ease-in-out infinite;
+        }
+
+        @keyframes animate {
+
+            0%,
+            100% {
+                clip-path: polygon(0% 45%,
+                        16% 44%,
+                        33% 50%,
+                        54% 60%,
+                        70% 61%,
+                        84% 59%,
+                        100% 52%,
+                        100% 100%,
+                        0% 100%);
+            }
+
+            50% {
+                clip-path: polygon(0% 60%,
+                        15% 65%,
+                        34% 66%,
+                        51% 62%,
+                        67% 50%,
+                        84% 45%,
+                        100% 46%,
+                        100% 100%,
+                        0% 100%);
+            }
+        }
+    </style>
 </head>
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+
+<body class="bg-black font-mono m-10 text-white">
+
+    <nav class="flex justify-between">
+        <a class="text-2xl " href="#">Pranab Raj KC</a>
+        <a class="text-2xl " href="mailto:pranabkca321@gmail.com">pranabkca321@gmail.com</a>
+    </nav>
+    <section class="mt-20  gap-4">
+        <p class="text-2xl text-gray-500 w-32 mb-8"> &lt;/Intro&gt;</p>
+        <p class="text-7xl" id="name" onmouseover="change()">Hello My Name Is Pranab Raj Kc </p>
+    </section>
+    <section class="mt-20 gap-4">
+        <div class="intrest">
+            <h1 class="text-2xl text-gray-500 w-32 mb-8">&lt;/Interest&gt;</h1>
+            <h2 class="text-6xl ">Tech Communities and Events, Writing, Trekking</h2>
+            <h2 class="text-6xl ">Tech Communities and Events, Writing, Trekking</h2>
+        </div>
+    </section>
+    <section class="mt-40 gap-4">
+        <p class="text-2xl text-gray-500 w-28 mb-8">&lt;/Skills&gt;</p>
+        <p class="text-7xl">
+            PHP, Laravel, Node, Express, Tailwind, GIT, Python ....
+        </p>
+    </section>
+    <section class="mt-20  gap-4">
+        <p class="text-2xl text-gray-500 w-32 mb-8">&lt;/Projects&gt;</p>
+        <p class="text-7xl w-fit">
+            I am currently working on,<a class="text-blue-500 hover:text-gray-500" href="#">Job Sangam</a>,<a
+                class="text-blue-500 hover:text-gray-500" href="#">Devlink</a>,<a
+                class="text-blue-500 hover:text-gray-500" href="#">Sajilo</a>,<a
+                class="text-blue-500 hover:text-gray-500" href="#">PrimeIT</a>,and <a
+                class="text-blue-500 hover:text-gray-500" href="#">Pygame Project</a>
+        </p>
+    </section>
+    <section class="mt-20  gap-4 ">
+        <p class="text-2xl text-gray-500 w-32 mb-8 mr-4">&lt;/CV&gt;</p>
+        <div class="flex border-2 border-slate-600 p-10 gap-6 ">
+            <p class="text-5xl"><a href="PranabCv .pdf">Download My CV</a></p>
+            <div class="m-1.5">
+                <svg fill="#ffffff" viewBox="0 0 32 32" width="30" height="30" version="1.1"
+                    xmlns="http://www.w3.org/2000/svg" stroke="#ffffff">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+
+                        <path
+                            d="M0 26.016q0 2.496 1.792 4.256t4.224 1.728h20q2.464 0 4.224-1.76t1.76-4.224v-20q0-2.496-1.76-4.256t-4.224-1.76h-4v4h4q0.8 0 1.408 0.608t0.576 1.408v20q0 0.832-0.576 1.408t-1.408 0.576h-20q-0.832 0-1.44-0.576t-0.576-1.408v-20q0-0.832 0.576-1.408t1.44-0.608h4v-4h-4q-2.496 0-4.256 1.76t-1.76 4.256v20zM6.016 26.016h20l-4-6.016h-12zM10.016 8l5.984 8 6.016-8h-4v-8h-4v8h-4z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <footer class="mt-20  gap-4">
+        <p class="text-2xl">Pranab Raj Kc. All Rights Reserved. 2024. &copy;</p>
+    </footer>
+    <script>
+    function change() {
+
+        const letter_animation = document.getElementById("name");
+
+        function getRandomLetter() {
+            const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            return alphabet[Math.floor(Math.random() * alphabet.length)];
+        }
+
+        function animateText() {
+            const originalText = letter_animation.textContent;
+            const length = originalText.length;
+
+            const intervalId = setInterval(() => {
+                const newContent = Array.from({ length }, () => getRandomLetter()).join('');
+                letter_animation.innerHTML = newContent;
+            }, 60);
+
+            setTimeout(() => {
+                clearInterval(intervalId);
+                letter_animation.innerHTML = originalText;
+            }, 1000);
+        }
+        letter_animation.addEventListener("mouseenter", animateText);
+
+
+    }
+</script>
 </body>
+
+
 </html>
